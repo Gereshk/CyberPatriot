@@ -1,0 +1,55 @@
+# Windows Checklist
+# Forensics questions first
+    Cyberchef.io
+    Cryptii.com
+# Updates 
+    Update required programs
+    Make sure windows updates are set to automatic
+    Make sure windows update service is turned on
+# Windows Firewall
+ # Firefox settings
+    Make sure it is updated (automatically install updates)
+    Privacy and security Make sure it is set to strict
+    Turn off autofill logins and passwords
+    Block pop-up windows turned on 
+    Warn when installing addons
+    Block Dangerous and deceptive content
+    Make sure they are turned on
+#Accounts
+  Remove unauthorized users
+  Add missing users
+  Make sure those who are admin are admin those that are normal users are normal users
+  Change non complex passwords (ex: CyberPatriot!2)
+  Disable guest account
+  Change default administrator account name if present
+# Password Policy
+  Password History = 7
+  Maximum Password age = 90 days
+  Minimum Password age = 15 days
+  Minimum Password length = 10 Character
+  Password must meet complexity requirements = Enabled
+  Store Password using Reversible encryption = Disabled
+# Account Lockout Policy
+  Account Lockout Threshold = 5-10 (one of them should give you points
+  Local Policies (Audit policy)
+  Turn them all on if you lose points turn what is making you lose points off
+
+
+# Local Policies (security options)
+  Interactive Logon: do not require CTRL+ALT+DEL = disabled
+
+# Remote Desktop
+  Disable unless required by scenario
+# Windows Defender
+  Virus and threat protection updates
+  Quick scan
+  Remove unauthorized programs
+
+
+# Computer Management
+  Shared Folders Stop sharing all of them
+  Remove media files
+  Make sure you are showing hidden files
+  Mp3, mp4, avi, mov
+  JPEG should be okay
+  Disable autoplay in windows settings

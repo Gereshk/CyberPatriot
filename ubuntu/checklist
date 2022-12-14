@@ -1,0 +1,56 @@
+                                                    Ubuntu Checklist
+  Forensic Questions first!
+  Updates
+    In Terminal type sudo apt update && sudo apt upgrade
+    In software and updates automatically check for updates =daily
+    When there are security updates=download and install automatically
+
+  Firewall configuration
+    Turn it on for all profiles
+    Reject incoming
+    Allow outgoing
+Anti Virus
+  ClamAv 
+    Terminal sudo apt install clamav
+    Cd to root directory - Terminal clamscan    
+    It will start scanning
+  User accounts
+    Remove unauthorized users
+    Add missing users
+    Make sure those who are admin are admin those that are normal users are normal users
+    Change non complex passwords (ex: CyberPatriot!2)
+
+Firefox settings
+  Make sure it is updated (automatically install updates)
+  Privacy and security Make sure it is set to strict
+  Turn off autofill logins and passwords
+  Block pop-up windows turned on 
+  Warn when installing addons
+  Block Dangerous and deceptive content and block dangerous downloads
+Disable guest account
+  In terminal nano /etc/lightdm/lightdm.conf
+  Add line allow-guest=false
+Password policies
+    In terminal sudo apt install libpam-cracklib
+    In terminal sudo nano /etc/pam.d/common-password
+    Add “remember=5” to the end of the line that has “pam_unix.so” in it
+    Add “minlen=10” to the end of the line that has “pam_unix.so” in it
+    Add “ucredit=-1 lcredit=-1 dcredit=-1 ocredit=-1” to the end of the line with “pam_cracklib.so” in it
+    Ctrl+s saves ctrl+x closes
+  In terminal sudo nano  /etc/login.defs
+    Scroll down until you find “PASS_MAX_AGE” change to 90
+    “PASS_MIN_AGE” change to 10
+    “PASS_WARN_AGE”	 make sure it is 7
+    Ctrl+s saves ctrl+x closes
+  Nano /etc/pam.d/common-auth
+    At the end of the file add auth required pam_tally2.so deny=5 onerr=fail unlock_time=1800
+ Locate media files 
+    Cd to root
+    Locate *.mp3
+    Locate *.mov
+    Locate *.mp4
+    Locate any other file types you think of
+    Jpeg are okay
+Install bum
+  Sudo apt install bum
+  Disable anything that looks wrong

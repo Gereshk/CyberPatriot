@@ -1,0 +1,40 @@
+#!/bin/bash
+
+# Set the home page to https://www.mozilla.org
+gsettings set org.gnome.Firefox.Application.Homepage "https://www.mozilla.org"
+
+# Set the search engine to Google
+gsettings set org.gnome.Firefox.Application.SearchEngine "google"
+
+# Enable the spell checker
+gsettings set org.gnome.Firefox.Application.SpellCheckingEnabled true
+
+# Enable tracking protection
+gsettings set org.gnome.Firefox.Application.TrackingProtectionEnabled true
+
+# Disable autoplaying videos
+gsettings set org.gnome.Firefox.Application.AutoplayVideosEnabled false
+
+# Disable the default browser check
+gsettings set org.gnome.Firefox.Application.DefaultBrowserCheckEnabled false
+
+# Disable the crash reporter
+gsettings set org.gnome.Firefox.Application.CrashReporterEnabled false
+
+# Set the download directory to the user's home directory
+gsettings set org.gnome.Firefox.Application.DownloadDirectory "$HOME"
+
+# Enable the pop-up blocker
+gsettings set org.gnome.Firefox.Application.PopupBlockingEnabled true
+
+# Block dangerous and deceptive content
+gsettings set org.gnome.Firefox.Application.security.block_download_insecure true
+
+# Block dangerous downloads
+gsettings set org.gnome.Firefox.Application.security.block_dangerous_downloads true
+
+# Block dangerous EXYs
+gsettings set org.gnome.Firefox.Application.security.block_dangerous_exy true
+
+# Warn when installing addons
+gsettings set org.gnome.Firefox.Application.xpinstall.signatures.required true

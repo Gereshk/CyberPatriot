@@ -7,10 +7,10 @@ $currentUser = Get-WmiObject -Class Win32_ComputerSystem | Select-Object -Expand
 # Get a list of all users except the current user
 $users = Get-WmiObject -Class Win32_UserAccount | Where-Object {$_.Name -ne $currentUser}
 
-# Change the password of each user to "CyberPatriot!@"
+# Change the password of each user to "CyberPatriot1@"
 foreach ($user in $users)
 {
-    $user.SetPassword("CyberPatriot!@")
+    $user.SetPassword("CyberPatriot1@")
 }
 
 Write-Host "Passwords fixed."

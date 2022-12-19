@@ -1,3 +1,4 @@
+:menu
 # Display menu
 Write-Host "What would you like to do?"
 Write-Host "1. Configure Windows Update"
@@ -26,4 +27,11 @@ switch ($choice)
         # Launch configure_sharing.ps1 script
         Start-Process -FilePath .\configure_sharing.ps1
     }
+    0 {
+        # Exit script
+        exit
+    }
 }
+
+# Return to menu
+goto menu

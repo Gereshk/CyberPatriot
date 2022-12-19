@@ -5,6 +5,7 @@ Write-Host "1. Configure Windows Update"
 Write-Host "2. Set password policy"
 Write-Host "3. Enable and update Windows Defender"
 Write-Host "4. Stop sharing shared folders and disable Autoplay"
+Write-Host "5. Require Ctrl+Alt+Del before logging in"
 Write-Host "Enter the number of the task you want to perform, or 0 to exit:"
 $choice = Read-Host
 
@@ -27,11 +28,14 @@ switch ($choice)
         # Launch configure_sharing.ps1 script
         Start-Process -FilePath .\configure_sharing.ps1
     }
+    5 {
+        # Launch configure_cad.ps1 script
+        Start-Process -FilePath .\configure_cad.ps1
+    }
     0 {
         # Exit script
         exit
     }
 }
 
-# Return to menu
-goto menu
+#

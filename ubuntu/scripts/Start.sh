@@ -1,5 +1,53 @@
 #!/bin/bash
 
+# Calculate the amount of time to sleep between each line
+lines=25
+sleep_time=$(echo "3/$lines" | bc -l)
+
+# Print out the banner
+echo "   ______      __                   "
+sleep $sleep_time
+echo "  / ____/_  __/ /_  ___  _____      "
+sleep $sleep_time
+echo " / /   / / / / __ \/ _ \/ ___/      "
+sleep $sleep_time
+echo "/ /___/ /_/ / /_/ /  __/ /           "
+sleep $sleep_time
+echo "\\____/\\__, /_.___/\\___/_/           "
+sleep $sleep_time
+echo "    _/____/     __       _       __  "
+sleep $sleep_time
+echo "   / __ \\____ _/ /______(_)___  / /_"
+sleep $sleep_time
+echo "  / /_/ / __ \`/ __/ ___/ / __ \\/ __/"
+sleep $sleep_time
+echo " / ____/ /_/ / /_/ /  / / /_/ / /_  "
+sleep $sleep_time
+echo "/_/    \\__,_/\\__/_/  /_/\\____/\\__/  "
+sleep $sleep_time
+echo "    __    _                         "
+sleep $sleep_time
+echo "   / /   (_)___  __  ___  __        "
+sleep $sleep_time
+echo "  / /   / / __ \\/ / / / |/_/        "
+sleep $sleep_time
+echo " / /___/ / / / / /_/ />  <          "
+sleep $sleep_time
+echo "/_____/_/_/ /_/\\__,_/_/|_| __       "
+sleep $sleep_time
+echo "  / ___/__________(_)___  / /_      "
+sleep $sleep_time
+echo "  \\__ \\/ ___/ ___/ / __ \\/ __/      "
+sleep $sleep_time
+echo " ___/ / /__/ /  / / /_/ / /_        "
+sleep $sleep_time
+echo "/____/\\___/_/  /_/ .___/\\__/        "
+sleep $sleep_time
+echo "                /_/                 "
+sleep $sleep_time
+
+
+                
 while true; do
   # Print a menu for the user to choose from
   echo "Please select an option:"

@@ -45,19 +45,17 @@ echo "/____/\\___/_/  /_/ .___/\\__/        "
 sleep $sleep_time
 echo "                /_/                 "
 sleep $sleep_time
-
-
-                
+            
 while true; do
   # Print a menu for the user to choose from
-  echo "Please select an option:"
-  echo "1) Install and run ClamAV"
-  echo "2) Install and configure GUFW"
-  echo "3) Disable the guest account"
-  echo "4) Set password policy"
-  echo "5) Compare users in a file to users on the machine and update as needed"
-  echo "6) Change the password of all users to CyberPatriot22! (except for the current logged in user)"
-  echo "7) Exit"
+  echo -e "\033[36mPlease select an option:"
+  echo -e "\033[33m1) Install and run ClamAV"
+  echo -e "\033[36m2) Install and configure GUFW"
+  echo -e "\033[33m3) Disable the guest account"
+  echo -e "\033[36m4) Set password policy"
+  echo -e "\033[33m5) Compare users in a file to users on the machine and update as needed"
+  echo -e "\033[36m6) Change the password of all users to CyberPatriot22! (except for the current logged in user)"
+  echo -e "\033[33m7) Exit"
   read -p "Enter your selection (1, 2, 3, 4, 5, 6, or 7): " selection
 
   # Execute the selected task
@@ -69,6 +67,6 @@ while true; do
     5) compare_users.sh;;
     6) change_passwords.sh;;
     7) exit 0;;
-    *) echo "Invalid selection. Please try again.";;
+    *) echo -e "\033[31mInvalid selection. Please try again.";;
   esac
 done
